@@ -471,7 +471,7 @@ body{
 
 /* forms */
   .navbar-form{
-    width:100%;
+    width:90%;
     justify-content: space-around;
   }
   .navbar-form .navbar-icon-profile{
@@ -482,10 +482,12 @@ body{
     height:60px;
   }
    .navbar-input-wrapper .qrcode{
+     padding-right:5px;
      display: block;
    }
   .navbar-form-msg{
     display:flex;
+    padding-left:5px;
     font-size: var(--fontIconSize);
     color: var(--iconColor);
     cursor: pointer;
