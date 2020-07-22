@@ -168,6 +168,159 @@
 
 <div class="content-center-wrapper">
 
+    <div class="profilecardwrapper">
+          <div class="profilebg">
+              <i class = "fa fa-ellipsis-v"></i>
+          </div>
+          <div class="profileimgwrapper">
+            <img src="assets/girl.jpg" alt="">
+          </div>
+          <div id="profileEdit"> Edit profile</div>
+          <div style="clear:both;"></div>
+      <div style="margin:0px 14px;">
+          <div class="aboutwrapper">
+            <div>John Doe</div>
+            <div> <i class="fa fa-map-marker"></i> Chennai, India</div>
+          </div>
+          <div class="bio">I have 7+ years of sales experience in both SDR and account manager roles.
+             I excel in SaaS sales for startups targeting SMB and enterprise businesses.
+           I was a sales coach specializing in assisting small teams (five-10 people) .</div>
+
+           <div class="connections">
+             <strong style="font-size: 17px;color:black;">78</strong> connections <strong style="font-size: 17px;color:black;">|</strong>
+             <strong style="font-size: 17px;color:black;">14</strong> posts
+           </div>
+      </div>
+           <div class="profilebtns">
+           <button id="myBtn">About</button>
+           <button id="myBtn1">Skills</button>
+           <button>Projects</button>
+           </div>
+
+
+ <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1 style="padding:20px;color:rgba(0, 115, 177, 1);">About</h1>
+    </div>
+
+    <div class="aboutmodalwrapper">
+
+              <div> <i class="fa fa-graduation-cap"></i>
+                    studies at <strong>Anna University, CEG Campus</strong>
+              </div>
+              <div> <i class="fa fa-graduation-cap"></i>
+                    Went to <strong>Sishya School, Chennai</strong>
+              </div>
+<hr/>
+              <h3 style="padding:10px 0px;">Other</h3>
+              <div> <i class="fa fa-birthday-cake"></i>
+                    Born on <strong>March 7,1999</strong>
+              </div>
+
+              <div> <i class="fa fa-home"></i>
+                    Lives in <strong>Mylapore, Chennai</strong>
+              </div>
+              <div> <i class="fa fa-clock-o"></i>
+                    joined on <strong>March 2018</strong>
+              </div>
+              <hr/>
+              <h3 style="padding:10px 0px;">Contact</h3>
+              <div> <i class="fa fa-phone"></i>
+                    +91 <strong>8066 193291</strong>
+              </div>
+              <div> <i class="fa fa-envelope"></i>
+                     <strong>johndoe@gmail.com</strong>
+              </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div id="myModal1" class="modal1">
+
+ <!-- Modal content -->
+ <div class="modal-content">
+   <div class="modal-header">
+     <span class="close1">&times;</span>
+     <h1 style="padding:20px;color:rgba(0, 115, 177, 1);">Skills</h1>
+   </div>
+
+   <div class="skillmodalwrapper">
+
+   <h3> <i class="fa fa-star"></i>Top skills</h3>
+   <div style="display:flex;justify-content:space-between;">
+      <div><i class="fa fa-circle"></i> C++</div>
+      <div class="progress" style="padding:0px;">
+         <div class="skills html" style="padding:0px;">90%</div>
+     </div>
+   </div>
+   <div style="display:flex;justify-content:space-between;">
+      <div><i class="fa fa-circle"></i> Web development</div>
+      <div class="progress" style="padding:0px;">
+         <div class="skills web" style="padding:0px;">80%</div>
+     </div>
+   </div>
+
+   <div style="display:flex;justify-content:space-between;">
+      <div><i class="fa fa-circle"></i> Python</div>
+      <div class="progress" style="padding:0px;">
+         <div class="skills py" style="padding:0px;">70%</div>
+     </div>
+   </div>
+
+
+   <br/>
+<hr/><br/>
+   <h3> <i class="fa fa-star"></i>Tools and Technologies</h3>
+   <div style="display:flex;justify-content:space-between;">
+      <div><i class="fa fa-circle"></i> Django</div>
+      <div class="progress" style="padding:0px;">
+         <div class="skills py" style="padding:0px;">70%</div>
+     </div>
+   </div>
+   <div style="display:flex;justify-content:space-between;">
+      <div><i class="fa fa-circle"></i> React.js</div>
+      <div class="progress" style="padding:0px;">
+         <div class="skills web" style="padding:0px;">80%</div>
+     </div>
+   </div>
+
+
+   </div>
+
+
+
+ </div>
+
+</div>
+
+<!-- end of modals -->
+
+
+
+
+    </div>
+
+    <div class="posts">
+      Posts
+    </div>
+
+
+
+
+
+
+
+
+
+
+
        <div class="content1">
            <div class = "row1">
              <div>
@@ -336,5 +489,37 @@
 
 
 </div>
+
+
+
+<script>
+var modal = document.getElementById("myModal");
+var modal1 = document.getElementById("myModal1");
+var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
+var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close1")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  else if(event.target == modal1){
+    modal1.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>

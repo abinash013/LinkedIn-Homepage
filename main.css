@@ -115,6 +115,7 @@ opacity:0;
 }
 
 .navbar-hs-r1{
+
   background: var(--hsRow1);
   height:170px;
   width:100%;
@@ -579,6 +580,247 @@ Like buttons. not implemented
   justify-content:flex-start;
 
 }
+
+
+
+
+/* Profile card */
+
+
+.profilecardwrapper{
+        position: relative;
+        background: white;
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);
+}
+
+.profilebg{
+  background: #0095b5;
+  height:150px;
+}
+
+.profilebg i{
+  float:right;
+  color:white;
+  opacity:0.9;
+  cursor:pointer;
+  font-size:25px;
+  padding:15px;
+}
+
+.profileimgwrapper{
+  position:absolute;
+  top:100;
+  left:30px;
+  height:85px;
+  width:85px;
+  border:1px solid rgba(255,255,255,0.3);
+  overflow: hidden;
+  border-radius: 50%;
+  background: white;
+}
+
+.profileimgwrapper img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+#profileEdit{
+  float:right;
+  padding:5px;
+  margin:8px;
+  border:1px solid rgba(0,0,0,0.6);
+  border-radius: 20px;
+  font-family: arial;
+  font-weight:550;
+  font-family: Helvetica;
+  cursor: pointer;
+  transition:  0.1s ease;
+
+}
+
+#profileEdit:hover{
+  transform: scale(1.1);
+}
+
+
+.aboutwrapper{
+  margin:5px 0px;
+  font-family: arial;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutwrapper div:first-child{
+  font-size:23px;
+}
+
+.bio{
+      font-size: 14px;
+      font-family: arial;
+      opacity:0.9;
+}
+
+.connections{
+  margin:10px 0px 5px 0px;
+  text-align: center;
+  color:#0073b1;
+  font-weight:550;
+}
+
+.profilebtns{
+  width:100%;
+  margin:10px 0px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profilebtns button{
+  flex:33%;
+  outline:none;
+  cursor:pointer;
+  border:none;
+  border-left:1px solid rgba(255,255,255,0.1);
+  padding:6px 40px;
+  color:white;
+   background:rgba(0, 115, 177, 0.8);
+  transition:background 0.2s ease;
+}
+
+.profilebtns button:hover{
+   background:rgba(0, 115, 177, 1);
+   opacity: 1;
+}
+
+.posts{
+  margin:6px 0px;
+  padding: 4px 0px;
+  font-size: 25px;
+  color:rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.1);
+  box-shadow:0px 0px 3px rgba(0,0,0,0.3);
+
+}
+
+
+.modal,.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #f5f5f5;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close, .close1 {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.modal-body {padding: 2px 16px;}
+
+.aboutmodalwrapper,.skillmodalwrapper{
+
+  padding:10px 15px;
+  font-family: arial;
+  font-size:16px;
+}
+
+.aboutmodalwrapper h3, .skillmodalwrapper h3{
+/*  color:rgba(0, 115, 177, 1); */
+color:#283e4a;
+}
+
+.aboutmodalwrapper div i,.skillmodalwrapper div i{
+  width:22px;
+  color:#283e4a;
+}
+
+.aboutmodalwrapper div,.skillmodalwrapper div{
+  padding:10px 0px;
+}
+
+.skillmodalwrapper div i{
+  font-size:10px;
+}
+
+.progress {
+  width: 20%;
+  height:15px;
+  background-color: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.skills {
+  text-align: right;
+  color: white;
+  font-size:12px;
+}
+
+.html {
+   background-color: #4CAF50;
+width:90%;}
+
+.web{
+  background: #4CAF50;
+  width:80%;
+}
+
+.py{
+  background: #4CAF50;
+  width:70%;
+}
+
+
+
+/* end of profile */
 @media only screen and (min-width:768px){
   .navbar-hs{
     display: none;
