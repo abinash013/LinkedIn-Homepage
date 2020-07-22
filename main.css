@@ -627,7 +627,7 @@ Like buttons. not implemented
 
 #profileEdit{
   float:right;
-  padding:5px;
+  padding:8px;
   margin:8px;
   border:1px solid rgba(0,0,0,0.6);
   border-radius: 20px;
@@ -657,13 +657,13 @@ Like buttons. not implemented
 }
 
 .bio{
-      font-size: 14px;
+      font-size: 15px;
       font-family: arial;
       opacity:0.9;
 }
 
 .connections{
-  margin:10px 0px 5px 0px;
+  margin:15px 0px 15px 0px;
   text-align: center;
   color:#0073b1;
   font-weight:550;
@@ -682,7 +682,7 @@ Like buttons. not implemented
   cursor:pointer;
   border:none;
   border-left:1px solid rgba(255,255,255,0.1);
-  padding:6px 40px;
+  padding:10px 40px;
   color:white;
    background:rgba(0, 115, 177, 0.8);
   transition:background 0.2s ease;
@@ -694,8 +694,8 @@ Like buttons. not implemented
 }
 
 .posts{
-  margin:6px 0px;
-  padding: 4px 0px;
+  margin:10px 0px;
+  padding: 8px 0px 8px 6px;
   font-size: 25px;
   color:rgba(0,0,0,0.8);
   background: rgba(0,0,0,0.1);
