@@ -746,7 +746,8 @@ Like buttons. not implemented
 
 /* The Close Button */
 .close, .close1 {
-  color: black;
+  padding:15px;
+  color: #283e4a;
   float: right;
   font-size: 28px;
   font-weight: bold;
