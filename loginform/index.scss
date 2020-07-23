@@ -129,7 +129,7 @@
   left:0px;
   width:100%;
 
-
+ padding-left: 5px;
 
 
 
@@ -290,15 +290,21 @@ input[type=number] {
 
   .mainsection{
     height:auto;
-
+    padding:5px;
     .signinwrapper{
         margin:50px 80px 20px 0px;
     }
   }
-
+  .signup{
+    height: auto;
+  }
 
   .signups{
   margin:60px 70px 0px 0px;
+}
+
+.mainsection{
+  overflow-y:inherit;
 }
 }
 
