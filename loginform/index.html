@@ -1,0 +1,208 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>login</title>
+</head>
+<body>
+
+<div class="loginwrapper">
+
+    <div class="leftsection">
+           <div class="logo">GoTestSeries</div>
+           <h4><i>just do it</i></h4>
+
+          <div class="lshead">
+            Featured <br>Experiences
+          </div>
+          <div class="watermark"> Featured</div>
+          <div class="gridwrapper">
+                <div class="grid">
+                  <div class="imgwrapper">
+                    <img src="../assets/girl.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis <br>
+                    <i>sunday 2019</i>
+                  </div>
+                </div>
+
+
+                <div class="grid">
+                  <div class="imgwrapper">
+                    <img src="../assets/office.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <Officiis></Officiis>
+                    at ducimus. <br>
+                    <i>sunday 2020</i>
+                  </div>
+                </div>
+
+                <div class="grid">
+                  <div class="imgwrapper">
+                    <img src="../assets/office.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    Lorem ipsum consectetur adipisicing elit. Officiis numquam,
+                    at ducimus. <br>
+                    <i>sunday 2020</i>
+                  </div>
+                </div>
+
+                <div class="grid">
+                  <div class="imgwrapper">
+                    <img src="../assets/girl.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    Lorem ipsum dolor sit amet, consectetur elit. Officiis numquam,
+                    at ducimus. <br>
+                    <i>sunday 2020</i>
+                  </div>
+                </div>
+
+                <div class="grid">
+                  <div class="imgwrapper">
+                    <img src="../assets/profile.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    Lorem ipsum dolor sit amet,adipisicing elit. Officiis numquam,
+                    at ducimus. <br>
+                    <i>sunday 2020</i>
+                  </div>
+                </div>
+          </div>
+
+
+
+
+    </div>
+
+    <div class="mainsection">
+              <div class="title">Welcome Back</div>
+              <form action="">
+              <div class="label">Your Name</div>
+              <input type="text" required>
+              <div class="label">Your password</div>
+              <input type="password" required>
+              <br/>
+              <div class="signinwrapper">
+                <div>Sign in</div>
+              <button type="submit"> <i class="fa fa-arrow-right"></i></button>
+              </div>
+              <div class="signups">
+                <div id="signbtn">Sign up</div>
+                <div>Forgot Password</div>
+              </div>
+              </form>
+
+              <div class="mediawrapper">
+                <div class="mediaheader">or Sign in Using</div>
+                <div class="icons">
+                  <div class="icon google"> <i class="fa fa-google"></i></div>
+                  <div class="icon fb"> <i class="fa fa-facebook"></i></div>
+                  <div class="icon twitter"> <i class="fa fa-twitter"></i></div>
+                </div>
+              </div>
+
+              <div class="signup">
+                <form action="" id="login" onsubmit="remove()">
+
+                <div class="title" style="margin-bottom:30px;">Create account</div>
+                <div class="namewrapper">
+                  <div>
+                      <div class="label">First Name</div>
+                      <input type="text" required>
+                </div>
+                <div>
+                      <div class="label">Last Name</div>
+                      <input type="text" required>
+                </div>
+                </div>
+                <div class="label">Date of Birth</div>
+                <input type="date" required>
+
+                <div class="label">Username</div>
+                <input type="text" required>
+
+                <div class="label">Password</div>
+                <input type="password" required>
+
+                <div class="label">Email ID</div>
+                <input type="email" required>
+
+                <div class="label">Contact Number</div>
+                <input type="number">
+
+                <div class="label">Location</div>
+                <input type="text">
+
+                <div class="label">Education</div><br/>
+                <div class="additem">
+                <i class="fa fa-plus"></i> Add education
+                </div>
+
+
+                <div class="label">Skills</div><br/>
+                <div class="additem">
+                <i class="fa fa-plus"></i> Add skills
+                </div>
+
+                <div class="label">Jobs/Internships</div><br/>
+                <div class="additem">
+                <i class="fa fa-plus"></i> Add description
+                </div>
+
+
+                <div class="signinwrapper" >
+                  <div>Sign up</div>
+                <button type="submit"> <i class="fa fa-arrow-right"></i></button>
+                </div>
+                </form>
+              </div>
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+<script>
+
+var signupbtn = document.querySelector("#signbtn");
+var signuppage = document.querySelector(".signup");
+var loginform = document.querySelector("#login");
+signupbtn.addEventListener('click',()=>{
+
+ signuppage.style.display="block";
+});
+
+loginform.addEventListener('submit',()=>{
+  signuppage.style.display="none";
+});
+
+
+$('.additem').click(function(){
+let name = prompt('Enter the details');
+if(name != null && name != ''){
+$(this).prepend("<li class='prepend'>"+name+"</li>")
+}
+});
+
+</script>
+
+
+</html>
