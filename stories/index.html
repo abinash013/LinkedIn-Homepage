@@ -1,0 +1,152 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stories</title>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <!-- ## Setup -->
+  <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <link rel="canonical" href="index.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+  <noscript>
+    <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+  </noscript>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tienne:700" rel="stylesheet">
+
+
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "CreativeWork",
+        "headline": "The Mars Cruise",
+        "url": "https://www.example.com"
+      }
+  </script>
+
+
+  <style amp-custom>
+    :root {
+      --yellow: #ffd200;
+      --transparent: rgba(0, 0, 0, 0);
+      --black: rgba(0, 0, 0, 1);
+    }
+
+    amp-story {
+      color: #eaeaea;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    amp-story .horiz {
+      display: flex;
+      flex-direction: row;
+    }
+
+    amp-story .horiz::before,
+    amp-story .horiz::after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 0.0625em solid #fff;
+      margin: auto;
+    }
+
+    amp-story .horiz::before {
+      margin-right: 2.3rem;
+    }
+
+    amp-story .horiz::after {
+      margin-left: 2.3rem;
+    }
+
+    amp-story h2 {
+      color: var(--yellow);
+      font-size: 6.8vw;
+      font-weight: 700;
+      font-family: 'Josefin Sans', sans-serif;
+      text-transform: uppercase;
+      margin-bottom: -2vw;
+    }
+
+    amp-story h3 {
+      font-weight: 700;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    amp-story p {
+      font-size: 4.5vw;
+      line-height: 5vw;
+      letter-spacing: 0.1vw;
+    }
+
+    amp-story .yellow {
+      color: var(--yellow);
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <amp-story standalone title="Stories" publisher="Abinash"
+    publisher-logo-src="" poster-portrait-src=""
+    poster-square-src="." poster-landscape-src=""
+    background-audio="">
+
+    <!-- The page1 Page -->
+    <amp-story-page id="page1">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="../assets/profile.jpg" width="720" height="1280" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+
+
+    </amp-story-page>
+
+    <amp-story-page id="page2">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="../assets/pic1.jpg" width="720" height="1280" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+
+    </amp-story-page>
+
+    <!-- What to Bring -->
+    <amp-story-page id="page3">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="../assets/pic2.jpg" width="960" height="1280"></amp-img>
+      </amp-story-grid-layer>
+
+    </amp-story-page>
+
+    <!-- Highlights -->
+    <amp-story-page id="page4">
+
+      <amp-story-grid-layer template="fill">
+        <amp-img src="../assets/office.jpg" width="960" height="1280"></amp-img>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="page5" auto-advance-after="rover-video">
+      <amp-story-grid-layer template="fill">
+      <amp-img src="../assets/pic3.jpg" width="960" height="1280"></amp-img>
+      </amp-story-grid-layer>
+    </amp-story-page>
+    <amp-story-page id="page6">
+      <amp-story-grid-layer template="fill">
+      <amp-img src="../assets/pic4.jpg"width="960" height="1280"></amp-img>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+
+
+  </amp-story>
+
+</body>
+
+</html>
