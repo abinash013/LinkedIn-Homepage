@@ -66,11 +66,11 @@ document.querySelector(".expand-add-acc").addEventListener("click", function () 
 })
 
 var sidebar = document.querySelector(".sidebar");
-
+/*
 document.querySelector("body").addEventListener("touchstart", startTouch, false);
 document.querySelector("body").addEventListener("touchmove", moveTouch, false);
 document.querySelector(".sidebar").addEventListener("touchmove", moveTouch2, false);
-
+*/
 // Swipe Up / Down / Left / Right
 var initialX = null;
 var initialY = null;
@@ -199,9 +199,9 @@ window.onscroll = function (e) {
         document.querySelector('.mobile-header').style.top = '0';
         document.querySelector('.mobile-nav-bar').style.bottom = '0';
         scroll = 1;
-           
+
         }
-       
+
     } else {
         //   scrolling up
         scrolldown++;
@@ -210,7 +210,7 @@ window.onscroll = function (e) {
         document.querySelector('.mobile-header').style.top = '-52px';
         document.querySelector('.mobile-nav-bar').style.bottom = '-55px';
          scrolldown = 1;
-          
+
          }
     }
     this.oldScroll = this.scrollY;
