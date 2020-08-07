@@ -193,3 +193,12 @@
     }
   }
 }
+
+@media only screen and (max-width:600px){
+
+
+  .cardwrapper .card .contentwrapper .content .photogrid img{
+    width:25px;
+    height:25px;
+  }
+}
