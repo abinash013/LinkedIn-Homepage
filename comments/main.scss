@@ -176,7 +176,7 @@ hr {
 
 .commentwrapper{
   padding:5px 10px;
-
+  margin-bottom:70px;
   .reactionhead{
     color:#666666;
     font-family: arial;
@@ -332,7 +332,6 @@ hr {
   max-width:540px;
   width:100%;
   overflow: hidden;
-  height:70px;
   top: calc(100vh - 130px);
   left:0px;
   z-index:10;
@@ -354,10 +353,13 @@ hr {
     .sugest{
       background:#f3f6f8;
       font-family:arial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-weight:600;
-      font-size:12px;
+      font-size:14px;
       border-radius:10px;
-      padding:5px;
+      padding:8px;
       color:rgba(0,0,0,0.9);
       margin-right:14px;
     }
@@ -366,7 +368,6 @@ hr {
 .type{
    border-top:1px solid rgba(0,0,0,0.1);
    position: fixed;
-   height:70px;
    width:inherit;
    max-width:inherit;
    background: white;
@@ -389,6 +390,7 @@ hr {
      input[type="text"]{
        outline:none;
        width:60%;
+       font-size:16px;
        border:none;
        margin-left:5px;
        padding-left:10px;
@@ -430,5 +432,18 @@ hr {
     width:100%;
     min-width:100%;
     max-width:100%;
+  }
+}
+@media only screen and (max-width:600px){
+  .content1, .row6>div{
+    font-size:14px;
+  }
+
+  .lightgrey{
+    font-size:12px;
+  }
+
+  .header{
+    font-size:20px;
   }
 }
